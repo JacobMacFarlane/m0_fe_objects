@@ -5,7 +5,7 @@
 // the desired result. To check your work, run this
 // file in your Terminal.
 
-foods = {
+var foods = {
   apples: 23, 
   grapes: 507, 
   eggs: 48
@@ -14,19 +14,20 @@ foods = {
 // Write code that prints all of the 'keys' of the foods variable 
 // you created above:
 // YOUR CODE HERE
-
+Object.keys(foods)
 // Write code that prints all of the 'values' of the foods variable 
 // you created above:
 // YOUR CODE HERE
-
+Object.values(foods)
 // Write code that prints the value of the second food of the foods variable 
 // you created above:
 // YOUR CODE HERE
-
+foods.grapes;
 // Write code that adds a food to the foods object. 
 // Then, print the updated object:
 // YOUR CODE HERE
-
+foods.bannanas = 506
+Objects.keys(foods)
 
 #-------------------
 // Part 2: Email
@@ -40,16 +41,22 @@ foods = {
 // value should be some appropriate value for that key. Work to have at least 5 key-value pairs.
 
 // Write code that logs your email object to the terminal.
-
+var eMail = {
+  sender: "Nike@hotmail.com",
+  subject: "Biggest Sale of the Summer",
+  to: "jjmacfarlane943@gmail.com",
+  replyTo: "N/A",
+  body: "Be sure to stop by nike.com to partake in the biggest sale of the summer"
+}
 
 // Write code that logs all of the 'keys' of the email object 
 // you created above:
 // YOUR CODE HERE
-
+Object.keys(eMail)
 // Write code that logs all of the 'values' of the email object 
 // you created above:
 // YOUR CODE HERE
-
+Object.values(eMail)
 
 #-------------------
 // Part 3: Many Emails - CHALLENGE!
@@ -99,3 +106,26 @@ console.log(posts[0]);
 // YOU DO: Create an array of at least 3 EMAIL Objects, using the same 
 // key-value pairs you used in your email Object above.
 // Then, print the email Array to the Terminal.
+var eMail = [
+  {
+  sender: "Nike@hotmail.com",
+  subject: "Biggest Sale of the Summer",
+  to: "jjmacfarlane943@gmail.com",
+  replyTo: "N/A",
+  body: "Be sure to stop by nike.com to partake in the biggest sale of the summer"
+},
+{
+sender: "Adidas@gmail.com",
+subject: "Second biggest sale of the summer",
+to: "jjmacfarlane943@gmail.com",
+replyTo: "Adidasquickreply@hotmail.com",
+body: "Make sure to swing by the nearest adidas store to check out the second biggest sale of the summer"  
+},
+{
+sender: "Deftones1342@outlook.com",
+subject: "New Album 2023",
+to: "jjamcfarlane943@gmail.com",
+replyTo: "Chino@Deftones.org",
+body: "We are releasing out final album on Oct 32 of 2023" 
+}
+]
